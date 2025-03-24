@@ -8,7 +8,7 @@
 import java.util.ArrayList;
 public class Backpack implements BackpackInterface {
     // instance variables - replace the example below with your own
-    private ArrayList<Item> backpack;
+    private ArrayList<Gems> backpack;
 
     /**
      * Constructor for objects of class Backpack
@@ -44,13 +44,13 @@ public class Backpack implements BackpackInterface {
         }
         return false;
     }
-	/**
+    /**
      * Consumes an item in the backpack, removing it.
      * 
      * @param  name   The name of the item of which to delete
      * @return     true if deleted
      */
-	public boolean useItem(String item){
+    public boolean useItem(String item){
         for (int i = 0; i < backpack.size(); i++){
             if(backpack.get(i).getName().equals(item)){
                 backpack.remove(i);

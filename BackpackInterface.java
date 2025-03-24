@@ -13,7 +13,7 @@ public interface BackpackInterface
      * @param  x    The item to be stored
      * @return        true if added, false if not.
      */
-    void storeItem(Item x);
+    void storeItem(Gems x);
     /**
      * Counts the number of items in the backpack
      * 
