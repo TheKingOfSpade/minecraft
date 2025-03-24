@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Diamond extends Gems
+public class Diamond extends Gem
 {
     public Diamond(String Name, String Value, String Color, String Carat,
                     int Hardness, int Quantity, String Quality){
@@ -13,7 +13,6 @@ public class Diamond extends Gems
     }
     
     public Diamond(){
-    
-    
+    super("Diamond", "10k", "Blue", "24k", 10, 3, "High Quality");
     }
 }
