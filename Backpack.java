@@ -6,9 +6,9 @@
  * @version 1.2
  */
 import java.util.ArrayList;
-public class Backpack implements BackpackInterface {
+public class  Backpack implements BackpackInterface {
     // instance variables - replace the example below with your own
-    private ArrayList<Gems> backpack;
+    private ArrayList<Gem> backpack;
 
     /**
      * Constructor for objects of class Backpack
@@ -16,7 +16,7 @@ public class Backpack implements BackpackInterface {
     public Backpack()
     {
         // initialise instance variables
-        backpack = new ArrayList<Item>();
+        backpack = new ArrayList<Gem>();
     }
 
     /**
@@ -25,7 +25,7 @@ public class Backpack implements BackpackInterface {
      * @param  item   The item of which to add
      * @return     true if added
      */
-    public void storeItem(Item item){
+    public void storeItem(Gem item){
             backpack.add(item);       
     }
 
@@ -35,7 +35,7 @@ public class Backpack implements BackpackInterface {
      * @param  item   The item of which to delete
      * @return     true if deleted
      */
-    public boolean useItem(Item item){
+    public boolean useItem(Gem item){
         for (int i = 0; i < backpack.size(); i++){
             if(backpack.get(i).equals(item)){
                 backpack.remove(i);
@@ -66,13 +66,13 @@ public class Backpack implements BackpackInterface {
      * 
      * @return     An arraylist of Items in the backpack.
      */
-    public ArrayList<Item> getInventory(){
+    public ArrayList<Gem> getInventory(){
         return backpack;
     }
 
     public int countItems(){
         int count = 0;
-        for (Item item : backpack){
+        for (Gem item : backpack){
             count++;
         }
         return count;

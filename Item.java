@@ -6,7 +6,7 @@
  * @version 1.2
  */
 import java.util.ArrayList;
-public abstract class Gem implements GemstoneInterface{
+public abstract class Item implements ItemInterface{
     //Implemented in your own way
     String Name;
     String Value;
@@ -15,7 +15,7 @@ public abstract class Gem implements GemstoneInterface{
     int Hardness;
     int Quantity;
     String Quality;
-    public Gem(String name, String value, String color,String caratValue,
+    public Item(String name, String value, String color,String caratValue,
             int hardness, int quantity, String quality){
         this.Name = name;
         Value = value;
@@ -27,12 +27,12 @@ public abstract class Gem implements GemstoneInterface{
         
     }
     
-    public Gem(){
+    public Item(){
         this("Generic Gemstone", "50 dollars"
         , "Brown", "1 Carat", 5, 1, "Meh Quality");
     }
-    
     public String getName(){
     return Name;
     }
+    
 }
