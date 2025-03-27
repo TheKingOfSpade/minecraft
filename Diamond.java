@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Diamond extends Gem
+public class Diamond extends Item
 {
     public Diamond(String Name, String Value, String Color, String Carat,
                     int Hardness, int Quantity, String Quality){

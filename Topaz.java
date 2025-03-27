@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Topaz extends Gem
+public class Topaz extends Item
 {
     public Topaz(String Name, String Value, String Color, String Carat,
                     int Hardness, int Quantity, String Quality){

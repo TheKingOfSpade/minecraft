@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Quartz extends Gem
+public class Quartz extends Item
 {
     public Quartz(String Name, String Value, String Color, String Carat,
                     int Hardness, int Quantity, String Quality){
