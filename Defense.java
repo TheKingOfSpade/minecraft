@@ -6,8 +6,19 @@
  * @version (a version number or a date)
  */
 public class Defense implements DefenseCommands{
-    //Implemented in your own way
-    public String getName(){
-    return Name;
+    String SupportBeam;
+    String Material;
+    String Strength;
+    public Defense(String SupportBeam, String Material, String Strength){
+        this.SupportBeam = SupportBeam;
+        this.Material = Material;
+        this.Strength = Strength;
+    }
+    public Defense(){
+        this("Wooden Support Beam", "Wood", "Average Strength");
+    }
+    
+    public boolean blocked(){
+    return true;
     }
 }
